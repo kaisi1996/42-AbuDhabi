@@ -84,6 +84,8 @@ int main()
 			SearchContact(phoneBook);
 		else if (input == "EXIT")
 			break ;
+		else
+			printMenu();
 	}
 	return (0);
 }
