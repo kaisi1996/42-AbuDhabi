@@ -8,6 +8,6 @@ int main()
     if (hordZombie == NULL)
 		  return (1);
     for(int i = 0; i < n; i++)
-      hordZombie->announce();
+      hordZombie[i].announce();
     delete[] (hordZombie);
 }
