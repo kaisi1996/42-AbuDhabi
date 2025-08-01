@@ -12,6 +12,8 @@ int main()
 
     scavTrap.takeDamage(10);
 
+    scavTrap.beRepaired(8);
+
 	scavTrap.takeDamage(95);
 
     scavTrap.beRepaired(8);
