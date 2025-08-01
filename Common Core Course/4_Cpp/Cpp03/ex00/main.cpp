@@ -1,6 +1,6 @@
 #include "ClapTrap.hpp"
 
-// Hit Points (health)
+// Hit Points (means health)
 
 int main()
 {
@@ -8,6 +8,8 @@ int main()
     clapTrap.attack("Enemy");
     clapTrap.takeDamage(5);
     clapTrap.beRepaired(4);
+    clapTrap.takeDamage(5);
+    clapTrap.takeDamage(5);
     clapTrap.takeDamage(5);
     clapTrap.beRepaired(5);
     clapTrap.beRepaired(5);
