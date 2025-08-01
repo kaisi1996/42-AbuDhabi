@@ -105,13 +105,14 @@ Fixed Fixed::operator/(const Fixed& fixed) const
 }
 
 Fixed& Fixed::operator++() { // Pre-increment
+    Fixed temp;
     ++fixedPoint;
     return *this;
 }
 
 Fixed Fixed::operator++(int) { // Post-increment
     Fixed temp(*this);
-    ++(*this);
+    ++fixedPoint;
     return temp;
 }
 
@@ -122,7 +123,7 @@ Fixed& Fixed::operator--() { // Pre-decrement
 
 Fixed Fixed::operator--(int) { // Post-decrement
     Fixed temp(*this);
-    --(*this);
+    --fixedPoint;
     return temp;
 }
 
