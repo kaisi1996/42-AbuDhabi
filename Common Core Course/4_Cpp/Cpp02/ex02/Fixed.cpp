@@ -105,7 +105,6 @@ Fixed Fixed::operator/(const Fixed& fixed) const
 }
 
 Fixed& Fixed::operator++() { // Pre-increment
-    Fixed temp;
     ++fixedPoint;
     return *this;
 }
